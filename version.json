@@ -1,8 +1,7 @@
 {
-  "version": "2.0.0",
-  "git_tag": "v2.0.0",
-  "build": 1,
+  "version": "2.0.1",
+  "git_tag": "v2.0.1",
+  "build": 2,
   "channel": "stable",
-  "notes": "First Git-managed baseline"
+  "notes": "Fixes and minor improvements"
 }
-
