@@ -1,0 +1,69 @@
+# ===== OS / Editor / IDE =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+.vscode/
+.idea/
+*.iml
+
+# Claude / tooling local config
+.claude/
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.pyd
+
+# ===== Build / Packaging outputs =====
+build/
+dist/
+*.spec
+*.exe
+*.msi
+
+# Common archives (release packages should NOT be in repo)
+*.zip
+*.7z
+*.rar
+
+# ===== Logs / temp / runtime artifacts =====
+*.log
+*.tmp
+*.bak
+*.swp
+
+# ===== Runtime data / backups (不要进仓库) =====
+feishu_backup/
+state/
+*.db
+*.sqlite
+*.sqlite3
+
+# ===== Sensitive / machine-specific config (别上传) =====
+config/agent.json
+server/config.json
+
+# If you have other secrets, add them here:
+# *.key
+# *.pem
+# *.pfx
+
+# ===== Documents (版本记录用 Git，不用把 Word/PDF 放进来) =====
+*.docx
+*.doc
+*.pdf
+
+# ===== Third-party tools (可选：建议不纳入源码仓库) =====
+nssm-*/
+
+# ===== Documentation / notes =====
+*.md
+*.doc
+*.docx
+*.pdf
+
+# Ignore local A folder (docs / local copies)
+A/
+
+Updates/

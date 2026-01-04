@@ -1,0 +1,18 @@
+{
+  "version": "v2.0",
+  "build": 1,
+  "exe_name": "ICT_Monitor_v2.0.exe",
+  "release_date": "2025-12-18",
+  "description": "ICT报文监控系统 - 生产环境正式版",
+  "files": [
+    "ICT_Monitor_v2.0.exe",
+    "config/agent.json"
+  ],
+  "changelog": [
+    "全面升级为 C/S 架构自动分发版本",
+    "修复 Win7 系统兼容性问题",
+    "新增无 Measured 值时自动抓取 Status 功能",
+    "优化超大报文（>300行）自动忽略逻辑",
+    "将Open/Short统一统计"
+  ]
+}
