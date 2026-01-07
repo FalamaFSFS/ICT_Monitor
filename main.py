@@ -53,7 +53,7 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         version_str = _get_version_string()
-        self.setWindowTitle(f"ICT 报文监控系统_{version_str}")
+        self.setWindowTitle(f"ICT_Monitor_{version_str}")
 
         # 1) 初始化缓存库
         self.cache = CacheDB("cache/cache.sqlite")
@@ -193,12 +193,12 @@ class MainWindow(QMainWindow):
         from PyQt5.QtWidgets import QMessageBox
         reply = QMessageBox.question(
             self,
-            "确认退出",
-            "确定要关闭 ICT 报文监控系统吗？请谨慎关闭！",
+            "退出警告",
+            "请勿关闭ICT零件失效监控系统！",
             QMessageBox.Yes | QMessageBox.No,
             QMessageBox.No
         )
-        if reply == QMessageBox.No:
+        if reply in (QMessageBox.Yes, QMessageBox.No):
             e.ignore()
             return
         # 优雅关闭线程与缓存
